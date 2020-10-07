@@ -1,4 +1,4 @@
-<img alt="" src="https://pbs.twimg.com/profile_images/1118495722058452993/uXevynW7_400x400.png" width="250">
+<img alt="" src="https://pbs.twimg.com/profile_images/1118495722058452993/uXevynW7_400x400.png" width="150">
 
 # Creative Dev workshop Gobelins 2021 - Dorian
 

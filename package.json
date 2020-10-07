@@ -10,6 +10,8 @@
     "author": "Dorian",
     "license": "ISC",
     "dependencies": {
+        "event-emitter": "^0.3.5",
+        "gl-matrix": "^3.3.0",
         "normalize.css": "^8.0.0"
     },
     "devDependencies": {
