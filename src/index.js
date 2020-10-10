@@ -12,6 +12,9 @@ const ctx = canvas.getContext("2d")
 // à chaque image : 60fps
 const update = ()=>{
     requestAnimationFrame(update)
-    console.log(Mouse.cursor, ctx)
+
+    // fisrt scrolling floor 
+
 }
 requestAnimationFrame(update)
+
