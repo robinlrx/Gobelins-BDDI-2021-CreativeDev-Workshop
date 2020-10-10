@@ -7,8 +7,8 @@
 Clone the repository
 
 ```sh
- git clone https://github.com/mairod/Gobelins-BDDI-2021-CreativeDev-Workshop PROJECT-NAME
- cd PROJECT-NAME
+ git clone https://github.com/mairod/Gobelins-BDDI-2021-CreativeDev-Workshop
+ cd Gobelins-BDDI-2021-CreativeDev-Workshop
 ```
 
 Install npm dependencies
