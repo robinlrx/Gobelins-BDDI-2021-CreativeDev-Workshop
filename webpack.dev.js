@@ -1,6 +1,8 @@
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+
 
 module.exports = {
     devtool: 'eval-cheap-module-source-map',
@@ -54,7 +56,7 @@ module.exports = {
             ,
             {
                 // Load all icons
-                test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+                test: /\.(eot|woff|woff2|svg|ttf|png|jpg)([\?]?.*)$/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -67,6 +69,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './index.html',
             inject: true
-        })
+        }),
     ]
 };
