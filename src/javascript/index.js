@@ -1,6 +1,4 @@
 
-require('normalize.css/normalize.css');
-require('./styles/index.scss');
 
 import Mouse from "./utils/mouse"
 import Easing from "./utils/easing"
@@ -18,36 +16,26 @@ let canvasHeight = (canvas.height)
 let cW2 = (canvas.width / 2)
 let cH2 = (canvas.height / 2)
 
-let maskLoaded = false    
+let maskLoaded = false
 
 let time = 0
 
-// let timeStamp = Date.now()
-// let dt = 0
 
 // à chaque image : 60fps
-const update = ()=>{
+const update = () => {
     requestAnimationFrame(update)
 
     time += .01
 
-    // dt = Date.now() - timeStamp
-    // timeStamp = Date.now()
-    // console.log(dt);
-
-    // time += dt/1000
-    // console.log(time);
-
-    
     let mouseX = ((Mouse.cursor[0] + 1) / 2) * canvas.width
     let mouseY = ((Mouse.cursor[1] + 1) / 2) * canvas.height
-    
+
     ctx.clearRect(0, 0, canvas.width, canvas.height)
 
     let size = 200
-    
+
     ctx.save()
-    
+
     ctx.translate(mouseX, mouseY)
     ctx.rotate(time)
     ctx.scale(Math.sin(time), Math.sin(time))
